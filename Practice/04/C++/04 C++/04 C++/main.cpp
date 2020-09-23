@@ -8,14 +8,18 @@
 #include <iostream>
 
 int main() {
-    int x0, v0, t, res;
-    double g;
-    std::cout << "Введите x0 v0 t" << std::endl;
-    std::cin >> x0 >> v0 >> t;
-    g = 9.8;
+    int a, b, buf;
+    std::cin >> a >> b;
+    buf = a;
+    a = b;
+    b = buf;
+    std::cout << a << std::endl << b << std::endl;
     
-    res = x0 + v0 * t - g*t*t/2;
-    
-    std::cout << res << std::endl;
+    int c, d;
+    std::cin >> c >> d;
+    c = c + d;
+    d = c - d;
+    c = c - d;
+    std::cout << c << std::endl << d << std::endl;
     return 0;
 }
