@@ -9,16 +9,15 @@
 #define Header_2_h
 
 double Func2(int x, int k = 5) {
-    double minus, sum, _x;
-    minus = -1;
-    sum = 0;
-    _x = x;
-    
-    for (int i = 0, j = 3; i < k; i++, j+= 2){
-        _x *= x * x;
-        sum += minus * (_x / F(j));
-    }
-    return sum;
+	double sum = 0;
+	int minus = -1;
+
+	for (int i = 0; i < k; i++){
+		minus *= -1;
+		sum += minus * pow(x, 2 * i + 1) / F(2 * i + 1);
+	}
+
+	return sum;
 }
 
 #endif Header_2_h
