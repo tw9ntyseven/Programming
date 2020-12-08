@@ -30,4 +30,4 @@
 | Практическая 22 - [[C++]]() [[Python]]() | ------------ |
 | Практическая 23 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/23/23/main.cpp)  | ------------ |
 | Практическая 24 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/24/24/main.cpp)  | ------------ |
-| Практическая 25 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/25/C++/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/25/Python/my.py) | ------------ |
+| Практическая 25 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/25/25/C++/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/25/Python/my.py) | ------------ |
