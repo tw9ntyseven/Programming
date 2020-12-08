@@ -6,7 +6,7 @@
 
 | Практические | Лабораторные |
 | ------------ | ------------ |
-| Практическая 1 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/01/C%2B%2B/01/01/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/01/Python/my.py) | ------------ |
+| Практическая 1 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/01/C%2B%2B/01/01/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/01/Python/my.py) | Лабораторная работа №1 - [[lab]](https://github.com/tw9ntyseven/Programming/tree/master/Labs/01) |
 | Практическая 2 - [[C++]](https://github.com/tw9ntyseven/Programming/tree/master/Practice/02/%D0%A1%2B%2B) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/02/Python/my.py) | ------------ |
 | Практическая 3 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/03/C%2B%2B/03%20C%2B%2B/03%20C%2B%2B/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/03/Python/my.py) | ------------ |
 | Практическая 4 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/04/C%2B%2B/04%20C%2B%2B/04%20C%2B%2B/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/04/Python/my.py) | ------------ |
@@ -29,4 +29,5 @@
 | Практическая 21 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/21/C%2B%2B/21/21/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/21/Python/my.py) | ------------ |
 | Практическая 22 - [[C++]]() [[Python]]() | ------------ |
 | Практическая 23 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/23/23/main.cpp)  | ------------ |
-| Практическая 24 - [[C++]]()  | ------------ |
+| Практическая 24 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/24/24/main.cpp)  | ------------ |
+| Практическая 25 - [[C++]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/25/C++/main.cpp) [[Python]](https://github.com/tw9ntyseven/Programming/blob/master/Practice/25/Python/my.py) | ------------ |
