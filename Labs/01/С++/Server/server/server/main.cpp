@@ -8,11 +8,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
-#include <iomanip>
-#include <chrono> // для функций из std::chrono
 #include <fstream>
+#include <chrono>
+#include <iomanip>
 #include "../include/cpp_httplib/httplib.h"
 #include "../include/nlohmann/json.hpp"
+
 
 using json = nlohmann::json;
 using namespace httplib;
@@ -20,8 +21,10 @@ using namespace httplib;
 std::string html_str;
 
 
-void json_init(const Result& res, json& new_json) {
-    if (res) {
+void json_init(const Result& res, json& new_json)
+{
+    if (res)
+    {
         if (res->status == 200)
             new_json = json::parse(res->body);
         else
@@ -34,7 +37,8 @@ void json_init(const Result& res, json& new_json) {
     }
 }
 
-std::string current_time_str() {
+std::string current_time_str()
+{
     auto current_time = std::chrono::system_clock::now();
 
     std::time_t current_time_t = std::chrono::system_clock::to_time_t(current_time);
@@ -66,7 +70,7 @@ int current_time_int()
 
 void html_editing(std::string& html_str, const std::string& raw_arg, const std::string& arg)
 {
-    size_t position = html_str.find(raw_arg);
+    std::size_t position = html_str.find(raw_arg);
     while (position != std::string::npos)
     {
         html_str.replace(position, raw_arg.size(), arg);
@@ -74,7 +78,7 @@ void html_editing(std::string& html_str, const std::string& raw_arg, const std::
     }
 }
 
-void gen_response(const Request& req, Response& res)
+void gen_response(const Request& req, Response& res) 
 {
     html_editing(html_str, "{hourly[i].temp}", current_time_str());
 
@@ -107,7 +111,7 @@ void gen_response(const Request& req, Response& res)
     res.set_content(html_str, "text/html;charset=utf-8");
 }
 
-void gen_response_raw(const Request& req, Response& res)
+void gen_response_raw(const Request& req, Response& res) 
 {
     std::fstream cache("cache.txt");
     std::string rawR;
@@ -137,7 +141,7 @@ int main() {
     
 
     Client openweather_cli("http://api.openweathermap.org");
-    auto openweather_res = openweather_cli.Get("/data/2.5/onecall?id=524901&appid=eff249724eb9589a6c6a62e8dfb5578f&lang=ru&units=metric&lat=44.95719&lon=34.11079&exclude=current,minutely,daily,alerts");
+    auto openweather_res = openweather_cli.Get("/data/2.5/onecall?id=524901&appid=ff1484a9c853eaf0e82bdeee8b3cae19&lang=ru&units=metric&lat=44.95719&lon=34.11079&exclude=current,minutely,daily,alerts");
 
     json openweather_json;
     json_init(openweather_res, openweather_json);
@@ -178,7 +182,7 @@ int main() {
 
     if (html_file.is_open())
         getline(html_file, html_str, '\0');
-    else
+    else    
         std::cerr << "Error!\nFile not open\n";
 
     html_file.close();
